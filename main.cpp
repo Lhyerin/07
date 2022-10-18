@@ -1,16 +1,20 @@
 #include <iostream>
 #include <stdio.h>
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-int counter;
+void f(void);
 
-void set_counter()
-{
-	counter=20;
-}
+int i;
 int main(void)
 {
-	printf("counter=%d\n", counter);
-	set_counter();
-	printf("counter=%d\n", counter);
+	for (i=0;i<5;i++)
+	{
+		f();
+	}
 	return 0;
+}
+
+void f(void)
+{
+	for (i=0;i<10;i++)
+	printf("#");
 }
